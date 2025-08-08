@@ -1,1 +1,178 @@
-<h1>Мой сайт</h1>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/jpeg" href="2222.png">
+  <title>Verist Reborn — игровой клиент</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">VERIST REBORN</div>
+      <nav>
+        <a href="#about" class="active">Главная</a>
+        <a href="#features">Преимущества</a>
+        <a href="#video">Видео</a>
+        <a href="#install">Установка</a>
+        <a href="#support">Поддержка</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="about" class="hero">
+      <div class="container hero-row">
+        <div class="hero-left">
+          <h1>О нас</h1>
+          <p>Мы предоставляем лучший клиент для комфортной игры, который даст незабываемые впечатления от игры.</p>
+<div class="cta-row left">
+  <!-- Вставь сюда свой URL на сторонний сайт со скачиванием -->
+  <a class="btn btn-primary" href="https://linkget.ru/aavV" rel="noopener" target="_blank">Скачать</a>
+  <a class="btn" href="#features">Подробнее</a>
+</div>
+
+
+          <ul class="quick-points">
+            <li>Полный контроль над игрой</li>
+            <li>Максимум возможностей</li>
+            <li>Лучшая оптимизация</li>
+            <li>Обширный функционал</li>
+          </ul>
+        </div>
+
+        <aside class="hero-right">
+          <div class="hero-card">
+            <h3>Стабильный FPS</h3>
+            <p>Оптимизации ядра рендера дают ровный кадр на слабых ПК.</p>
+          </div>
+          <div class="hero-card" style="margin-top:12px">
+            <h3>Отдельная версия</h3>
+            <p>Verist Reborn ставится как версия Minecraft, а не как мод. Никаких конфликтов с модлоадерами — используется собственный профиль версии.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="container spread">
+      <div class="feature-box">
+        <h3>Красивый внешний вид</h3>
+        <p>Большое количество визуальных функций и гибкое оформление клиента под себя.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Настраиваемость</h3>
+        <p>Конфигурируйте любую функцию и делитесь конфигами с сообществом.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Оптимизация</h3>
+        <p>Запускается даже на слабых компьютерах благодаря улучшениям рендера и памяти.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Частые обновления</h3>
+        <p>Регулярно добавляем функции и улучшаем совместимость с серверами.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Лучшая поддержка</h3>
+        <p>Быстрая помощь по любым вопросам, связанным с клиентом.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Без конфликтов</h3>
+        <p>Отдельный профиль версии снижает вероятность сбоев и конфликтов окружения.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="video-section">
+      <div class="container video-row">
+        <div class="video-left">
+          <h2>Видеосборка</h2>
+          <p class="video-sub">Ниже можно посмотреть геймплей с нашим клиентом.</p>
+        </div>
+        <div class="video-right">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/watch?v=fqvAlEmMncw"
+              title="Verist gameplay"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top:18px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px">
+        <div class="feature-box"><h3>Пользователей</h3><p>137,732</p></div>
+        <div class="feature-box"><h3>Запусков клиента</h3><p>1,514,952</p></div>
+        <div class="feature-box"><h3>Обновлений вышло</h3><p>150</p></div>
+        <div class="feature-box"><h3>Дней с открытия</h3><p>1,036</p></div>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section id="install" class="container">
+      <h2>Установка версии</h2>
+      <div class="install-row">
+        <div>
+          <div class="callout">
+            Ставится как отдельная версия, модлоадеры не требуются.
+          </div>
+          <ol class="steps">
+            <li>Откройте папку данных Minecraft:
+              <code>Windows: %appdata%/.minecraft</code>,
+              <code>Linux: ~/.minecraft</code>,
+              <code>macOS: ~/Library/Application Support/minecraft</code>.
+            </li>
+            <li>Перейдите в <code>versions</code> и создайте папку <code>Verist-Reborn</code>.</li>
+            <li>Поместите файлы <code>Verist-Reborn.json</code> и <code>Verist-Reborn.jar</code> в
+              <code>.minecraft/versions/Verist-Reborn</code>.</li>
+            <li>Запустите лаунчер и выберите версию <code>Verist Reborn</code>.</li>
+          </ol>
+
+          <h3 style="margin-top:16px">Советы</h3>
+          <ul class="tips">
+            <li>Обновите драйвер видеокарты.</li>
+            <li>Если антивирус блокирует, добавьте клиента в исключения.</li>
+            <li>Запускайте лаунчер от имени администратора при ошибках доступа.</li>
+          </ul>
+        </div>
+
+        <aside>
+          <div class="hero-card">
+            <h3>Поддерживаемые версии</h3>
+            <p>Популярные версии Minecraft без конфликтов окружения.</p>
+          </div>
+          <div class="hero-card" style="margin-top:12px">
+            <h3>Документация</h3>
+            <p>Пошаговые инструкции и разбор частых проблем.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="support">
+    <div class="container" style="display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700;margin-bottom:6px">Навигация</div>
+        <div><a href="#about">Главная</a></div>
+        <div><a href="#buy">Купить</a></div>
+        <div><a href="#support">Поддержка</a></div>
+      </div>
+      <div>
+        <div style="font-weight:700;margin-bottom:6px">Правовая информация</div>
+        <div><a href="#">Обработка персональных данных</a></div>
+        <div><a href="#">Пользовательское соглашение</a></div>
+        <div><a href="#">Правила пользования</a></div>
+      </div>
+      <div>
+        <div style="font-weight:700;margin-bottom:6px">Контакты</div>
+        <div>Почта: <a href="mailto:nfthelp@mail.ru">nfthelp@mail.ru</a> (ПН–ПТ 10:00–18:00 МСК)</div>
+        <div style="margin-top:12px;color:#8b8b93">Copyright © Verist 2025</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
